@@ -1,1 +1,2 @@
-Book.objects.get(title="1984").update(title="Nineteen Eighty-four")
+book = Book.objects.get(title="1984")
+book.title = "Nineteen Eighty-four"
