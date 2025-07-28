@@ -1,1 +1,1 @@
-Book.objects.create(title="River", author="George Orwell", publication_year=2013)
+Book.objects.create(title="1984", author="George Orwell", publication_year=1949)
