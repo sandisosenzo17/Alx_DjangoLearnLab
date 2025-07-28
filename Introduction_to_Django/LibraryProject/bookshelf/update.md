@@ -1,1 +1,1 @@
-Book.objects.filter(id=1).update(title="Nineteen Eighty-four")
+Book.objects.get(id=1).update(title="Nineteen Eighty-four")
