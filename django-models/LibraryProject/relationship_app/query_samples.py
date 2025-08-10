@@ -9,5 +9,6 @@ author = models.Author.objects.create(name="Michio Kaku")
 book = models.Book.objects.create(title="The book of Mad Libs", author=author)
 book = models.Book.objects.create(title="The Physics of the Impossible", author=author)
 books = models.Library.books.all()
-_books = models.Book.objects.filter(author__name = author)
+aut = models.Author.objects.get(name=author)
+bk = models.Book.objects.filter(author=aut)
 #Retrieve the librarian for a library.
