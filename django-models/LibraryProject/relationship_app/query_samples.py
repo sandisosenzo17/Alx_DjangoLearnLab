@@ -11,4 +11,6 @@ book2 = models.Book.objects.create(title="The Physics of the Impossible", author
 books = models.Library.books.all()
 author = models.Author.objects.get(name=author_name)
 bk = models.Book.objects.filter(author=author)
+
 #Retrieve the librarian for a library.
+models.Librarian.objects.get(library=library_name)
