@@ -4,7 +4,7 @@ from relationship_app.models import Book, Library
 
 # Function-based view
 def list_all_books(request):
-    books = Book.objects.select_related("author").all()
+    books = Book.objects.all()
     return render(request, "relationship_app/list_books.html", {"books": books})
 
 # Class-based view
