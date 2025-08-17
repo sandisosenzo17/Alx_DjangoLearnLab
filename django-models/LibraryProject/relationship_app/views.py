@@ -6,5 +6,5 @@ def list_all_books(request):
   #Retrieve all books
   books = Book.objects.select_related('author').all()
 
-  return render(request, "relationship/list_books.html", {'books': books})
+  return render(request, "relationship_app/list_books.html", {'books': books})
 
